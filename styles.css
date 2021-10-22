@@ -17,7 +17,7 @@ body {
   /* place-items: baseline; */
   align-items: flex-start; /* alinha os objetos verticalmente.*/
   justify-content: center; /* alinha os objetos horizontalmente*/
-  background: url(./images/desktop/back.png) center top no-repeat fixed;
+  background: url(./images/desktop/bg_desktop.png) center top no-repeat fixed;
   background-color: #000000;
 }
 
