@@ -28,9 +28,7 @@ main {
   height: 812px;
   background: url(./images/mobile/background.svg) center top no-repeat;
   /* position: relative; */
-  margin-left: 3vh;
-  margin-right: 3vh;
-  margin-top: 3vh;
+  margin: auto 3vw;
 }
 
 .container {
@@ -39,17 +37,6 @@ main {
   margin-right: auto;
   text-align: center;
   color: var(--gray);
-}
-
-.desktop {
-  width: 358px;
-  min-width: 300px;
-  height: 680px;
-  background: url(./images/desktop/cracha.png) center top no-repeat;
-  position: relative;
-  margin-top: 0;
-  margin-left: 3vh;
-  margin-right: 3vh;
 }
 
 .avatar {
@@ -101,36 +88,31 @@ ul {
   margin-top: 5rem;
 }
 
-.button {
-  color: white;
-  position: relative;
-  margin: auto;
-  margin-top: 8rem;
-  width: 9.35rem;
-  height: 1.87rem;
-  justify-content: center;
-  padding-top: 0.62rem;
-  border: 2px solid var(--gray);
-  border-radius: 8px;
-}
+/***-- Alterações para versão desktop --***/
+/* min width: 500 */
 
-/* Alterações para versão desktop */
-.desktop-avatar {
-  margin: 13.25rem auto 0;
-}
+@media screen and (min-width: 500px) {
+  main {
+    width: 358px;
+    min-width: 300px;
+    height: 680px;
+    background: url(./images/desktop/cracha.png) center top no-repeat;
+    position: relative;
+    margin-top: 0;
+    margin-left: 3vh;
+    margin-right: 3vh;
+  }
 
-.desktop-ul {
-  margin-top: 1.5rem;
-}
-
-.event-logo-desktop {
-  margin-top: 1.25rem;
-}
-
-.img-logo {
-  width: 6.25rem;
-}
-
-.button-desktop {
-  margin-top: 6.25rem;
+  .avatar {
+    margin: 13.25rem auto 0;
+  }
+  ul {
+    margin-top: 1.5rem;
+  }
+  .event-logo-desktop {
+    margin-top: 1.25rem;
+  }
+  .img-logo {
+    width: 6.25rem;
+  }
 }
